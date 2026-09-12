@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:8000";
+  import.meta.env.VITE_API_URL || "https://india-post-accessibility-audit.onrender.com";
 
 export async function runAccessibilityAudit(url) {
   const response = await fetch(`${API_BASE_URL}/audit`, {
