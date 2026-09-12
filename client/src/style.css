@@ -181,3 +181,58 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+.error {
+  margin-top: 12px;
+  color: #b42318;
+  font-size: 14px;
+}
+
+.audit-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.issues-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.issue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.issue h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.issue p {
+  color: #667085;
+  font-size: 14px;
+}
+
+.severity {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #fff1f0;
+  color: #b42318;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .issue {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
